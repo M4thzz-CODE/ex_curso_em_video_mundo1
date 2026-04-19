@@ -1,7 +1,8 @@
-import math
+# Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira.
+# A função trunc vem da palavra inglesa truncate (truncar). No contexto da matemática e da programação, truncar significa "cortar" a parte decimal de um número sem realizar nenhum tipo de arredondamento.
 
-n1 = int(input("Digite um número: "))
+from math import trunc
 
-raiz = math.sqrt(num)
+num = float(input("Digite um número: "))
 
-print (f"A raiz é {n1} e {raiz}")
+print(f"O valor digitado foi {num} e sua porção inteira é {trunc(num)}.")
